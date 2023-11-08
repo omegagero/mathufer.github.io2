@@ -1,0 +1,7 @@
+.imgeducacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    max-height: 200px;
+}
