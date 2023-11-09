@@ -6,13 +6,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/d53d0a6ede.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assests/css/style.css">
-    <title>Document</title>
+    <title>CV - Mathias Hausdorf</title>
+    <link rel="icon" type="imagen/png" href="./assests/imgs/android-chrome-192x192.png">
 </head>
 <body>
     
     <head> 
         <!-- Navegador -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" >
             <div class="container-fluid">
               <h3>MATHIAS HAUSDORF</h3>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,26 +22,26 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Datos Personales</a>
+                        <a class="nav-link active" aria-current="page" href="#Datos_Personales">Datos Personales</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Educación</a>
+                        <a class="nav-link active" aria-current="page" href="#Educacion">Educación</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Experiencia Laboral</a>
+                        <a class="nav-link active" aria-current="page" href="#Experiencia_Laboral">Experiencia Laboral</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Mis Trabajos</a>
+                        <a class="nav-link active" aria-current="page" href="#Mis_Trabajos">Mis Trabajos</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                        <a class="nav-link active" aria-current="page" href="#Contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
         <!-- Datos personales -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="Datos_Personales">
             <h1 class="text-center">Datos Personales</h1>
             <div>    
                 <div class="row m-4">
@@ -75,7 +76,7 @@
 
     <main>
         <!-- Educacion -->
-        <div class="container-fluid">
+        <div class="container-fluid" id="Educacion">
             <h1 class="text-center">Formación Educacional</h1>
             <div class="row m-4">
                 <div class="card col-4 p-4">
@@ -99,24 +100,66 @@
                       <p class="card-text">Desafio LATAM</p>
                     </div>
                 </div>
-           
-
-
-
             </div>
         </div>
 
         <!-- Experiencia laboral -->
-        <div>
-
+        <div id="Experiencia_laboral">
+            <h1 class="text-center">Experiencia Laboral</h1>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h4>Encargado de Oficina / Administrativo Geskont SpA (09/2021 - Presente)</h4>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <ul>
+                        <li>Operaciones de oficina administrativa, incluida la programación y coordinación de reuniones, el manejo de correspondencia fisica y virtual.</li>
+                        <li>Supervisé la implementación de nuevos sistemas y procedimientos administrativos, lo que llevó a una reducción en el papeleo y la agilización de los procesos de oficina, con diferentes metodos, plataformas y Excel.</li>
+                        <li>Supervisé la implementación de nuevos sistemas y procedimientos administrativos, lo que llevó a una reducción en el papeleo y la agilización de los procesos de oficina, con diferentes metodos, plataformas y Excel.</li>
+                        <li>Desarrollé y mantuve relaciones sólidas con clientes y proveedores, asegurando la entrega oportuna y precisa de los servicios.</li>
+                        <li>Preparé y analicé informes financieros, presupuestos y declaraciones de gastos. Como tambien la preparacion de informes de impuestos ante el SII.</li>
+                        <li>Manejo de documentación, como contratos, finiquitos y anexos, en relación al Talento Humanos de diferentes clientes y sus trabajadores. También utilice la plataforma de la Dirección del Trabajo.</li>
+                        <li>Realicé trabajos y solicitudes en diferentes entidades, tales como municipalidad, servicios de impuestos internos, SEREMI, Mutual de Seguridad, entre otros.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
 
         <!-- Mis Trabajos -->
-        <div>
+        <div id="Mis_Trabajos">
         </div>
     </main>
 
-    <footer>
+    <footer id="Contacto">
         <!-- Contacto -->
         <div>
 
